@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #76a7a9, #2F284E);  
+    min-height: 100vh;
+    color: #333;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background: #2c3e50;
+    padding: 16px 0;
+    margin-bottom: 30px;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* --- Container --- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+/* --- Card --- */
+.card {
+    background: #fff;
+    border: 1px solid #dde1e7;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- Fields --- */
+.field {
+    margin-bottom: 16px;
+}
+
+.field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: #fafafa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: #fafafa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    min-height: 160px;
+    resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: #2c3e50;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.08);
+}
+
+/* --- Buttons (form) --- */
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.btn-blue   { background: #2980b9; color: #fff; }
+.btn-green  { background: #27ae60; color: #fff; }
+.btn-yellow { background: #f39c12; color: #fff; }
+.btn-red    { background: #e74c3c; color: #fff; }
+.btn-gray   { background: #95a5a6; color: #fff; }
+
+/* --- Table --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #dde1e7;
+}
+
+thead tr {
+    background: #2c3e50;
+    color: #fff;
+}
+
+th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+td {
+    padding: 11px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f7f9fc;
+}
+
+/* Content column */
+td.content-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Actions column */
+td.actions {
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+td.actions .btn {
+    width: 64px;
+    padding: 6px 0;
+    font-size: 12px;
+    margin: 0 3px;
+    display: inline-block;
+    text-align: center;
+}
+
+.muted {
+    color: #999;
+    font-size: 14px;
+    padding: 16px 0;
+}
+
+/* --- Clickable entry title --- */
+a.entry-link {
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.entry-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* --- View entry page --- */
+.entry-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.entry-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.entry-dates {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    color: #888;
+}
+
+.entry-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    min-height: 100px;
+}
+
+.entry-actions {
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 8px;
+}
