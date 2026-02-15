@@ -49,14 +49,12 @@ $entries = mysqli_query($conn, "SELECT * FROM journal ORDER BY entry_date DESC")
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <div class="navbar">
         <h1>📓 My Journal</h1>
     </div>
 
 <div class="container">
 
-    <!-- ADD / EDIT FORM -->
     <div class="card">
         <h5><?= $edit_entry ? 'Edit Entry' : 'Add New Entry' ?></h5>
         <form method="POST">
@@ -88,7 +86,6 @@ $entries = mysqli_query($conn, "SELECT * FROM journal ORDER BY entry_date DESC")
         </form>
     </div>
 
-    <!-- ALL ENTRIES -->
     <h4>All Entries</h4>
     <?php if (mysqli_num_rows($entries) === 0): ?>
         <p class="muted">No entries yet.</p>

@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* --- Navbar --- */
 .navbar {
     background: #2c3e50;
     padding: 16px 0;
@@ -28,7 +27,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* --- Container --- */
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -42,7 +40,6 @@ h4 {
     margin-bottom: 12px;
 }
 
-/* --- Card --- */
 .card {
     background: #fff;
     border: 1px solid #dde1e7;
@@ -61,7 +58,6 @@ h4 {
     border-bottom: 1px solid #eee;
 }
 
-/* --- Fields --- */
 .field {
     margin-bottom: 16px;
 }
@@ -108,7 +104,6 @@ h4 {
     box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.08);
 }
 
-/* --- Buttons (form) --- */
 .btn {
     display: inline-block;
     padding: 9px 20px;
@@ -133,7 +128,6 @@ h4 {
 .btn-red    { background: #e74c3c; color: #fff; }
 .btn-gray   { background: #95a5a6; color: #fff; }
 
-/* --- Table --- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -173,7 +167,6 @@ tbody tr:hover {
     background: #f7f9fc;
 }
 
-/* Content column */
 td.content-cell {
     max-width: 300px;
     white-space: nowrap;
@@ -181,7 +174,6 @@ td.content-cell {
     text-overflow: ellipsis;
 }
 
-/* Actions column */
 td.actions {
     width: 150px;
     white-space: nowrap;
@@ -203,7 +195,6 @@ td.actions .btn {
     padding: 16px 0;
 }
 
-/* --- Clickable entry title --- */
 a.entry-link {
     color: #2c3e50;
     font-weight: 600;
@@ -215,7 +206,6 @@ a.entry-link:hover {
     text-decoration: underline;
 }
 
-/* --- View entry page --- */
 .entry-header {
     margin-bottom: 20px;
     padding-bottom: 16px;
